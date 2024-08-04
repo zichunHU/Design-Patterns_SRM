@@ -1,8 +1,6 @@
 //
-// Created by ZICHUN on 24-8-4.
+// Created by ZICHUN.
 //
-
-#include "../include/FactoryManager.h"
 
 #include "FactoryManager.h"
 

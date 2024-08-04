@@ -1,18 +1,13 @@
 //
-// Created by ZICHUN on 24-8-4.
+// Created by ZICHUN.
 //
-
-#ifndef DESIGN_PATTERNS_PRODUCT_H
-#define DESIGN_PATTERNS_PRODUCT_H
-
-#include <memory>
-#include <iostream>
 
 #ifndef PRODUCT_H
 #define PRODUCT_H
 
 #include <iostream>
 #include "Strategy.h"
+#include <memory>
 
 // 抽象的产品基类
 class Product {
@@ -50,6 +45,3 @@ public:
 };
 
 #endif // PRODUCT_H
-
-
-#endif //DESIGN_PATTERNS_PRODUCT_H

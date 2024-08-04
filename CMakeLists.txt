@@ -9,10 +9,11 @@ set(CMAKE_CXX_STANDARD 17)
 include_directories(include)
 # 指定包含头文件的目录
 
+# 生成可执行文件 Design-Patterns
 add_executable(Design_Patterns
         src/main.cpp
         src/FactoryManager.cpp
         src/Product.cpp
         src/Strategy.cpp
 )
-# 定义要编译的源文件并生成可执行文件
+# 定义要编译的源文件
