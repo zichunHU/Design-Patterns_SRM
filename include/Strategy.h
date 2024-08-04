@@ -14,4 +14,28 @@ public:
     virtual void execute() = 0; // 纯虚函数，必须在派生类中实现
 };
 
+// 加热策略类
+class HeatingStrategy : public Strategy {
+public:
+    void execute() override {
+        std::cout << "Heating\n";
+    }
+};
+
+// 冷却策略类
+class CoolingStrategy : public Strategy {
+public:
+    void execute() override {
+        std::cout << "Cooling\n";
+    }
+};
+
+// 混合策略类
+class MixingStrategy : public Strategy {
+public:
+    void execute() override {
+        std::cout << "Mixing\n";
+    }
+};
+
 #endif //DESIGN_PATTERNS_STRATEGY_H
