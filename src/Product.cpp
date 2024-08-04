@@ -6,6 +6,7 @@
 
 // 设置产品的加工策略
 void Product::setStrategy(Strategy* strat) {
+    std::cout << "log: Strategy 内存保护" << std::endl;
     delete strategy; // 删除之前的策略以避免内存泄漏
     strategy = strat;
 }
@@ -13,7 +14,7 @@ void Product::setStrategy(Strategy* strat) {
 // 具体产品A的加工过程
 void ProductA::process() {
     if (strategy) {
-        std::cout << "Processing ProductA: ";
+        std::cout << "Processing Product_A: ";
         strategy->execute(); // 使用策略进行加工
     } else {
         std::cout << "No strategy assigned for ProductA\n";
@@ -23,7 +24,7 @@ void ProductA::process() {
 // 具体产品B的加工过程
 void ProductB::process() {
     if (strategy) {
-        std::cout << "Processing ProductB: ";
+        std::cout << "Processing Product_B: ";
         strategy->execute(); // 使用策略进行加工
     } else {
         std::cout << "No strategy assigned for ProductB\n";
@@ -33,7 +34,7 @@ void ProductB::process() {
 // 具体产品C的加工过程
 void ProductC::process() {
     if (strategy) {
-        std::cout << "Processing ProductC: ";
+        std::cout << "Processing Product_C: ";
         strategy->execute(); // 使用策略进行加工
     } else {
         std::cout << "No strategy assigned for ProductC\n";
