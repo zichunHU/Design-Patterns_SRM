@@ -11,7 +11,7 @@ include_directories(include)
 
 # 生成可执行文件 Design-Patterns
 add_executable(Design_Patterns
-        src/main.cpp
+        main.cpp
         src/FactoryManager.cpp
         src/Product.cpp
         src/Strategy.cpp

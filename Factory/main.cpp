@@ -1,4 +1,4 @@
-#include "FactoryManager.h"
+#include "include/FactoryManager.h"
 
 int main() {
     // 获取工厂管理者的唯一实例
